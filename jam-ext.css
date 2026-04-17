@@ -1,0 +1,47 @@
+body {
+    background-color: #0b1121; /* Warna latar belakang gelap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kotak-jam {
+    background-color: #1a2238; /* Warna biru navy kotak */
+    padding: 40px 70px;
+    border-radius: 30px; /* Sudut membulat halus */
+    text-align: center;
+    
+    /* Efek Glow Cyan di sekeliling kotak */
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.3); 
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    min-width: 500px;
+}
+
+#tanggal {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#jam {
+    color: #00ffff; /* Warna teks Sian */
+    font-size: 100px;
+    font-weight: bold;
+    /* Efek teks menyala */
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+    letter-spacing: 5px;
+}
+
+/* Animasi titik dua berkedip */
+.kedip {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.1; }
+}
